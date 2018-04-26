@@ -1,0 +1,41 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	when we execute git init command then a new hidden folder (.git) will be made.It will contain all the history of
+	this repo.It will automatically maintain the commit id's and methods.we need to do it to convert a simple directory
+	into a git repo.
+
+How is the staging area different from the working directory and the repository?What value do you think it offers?
+	
+	staging area is the intermediate stage between directory and repo.it gives us the power to only commit a single
+	logical change at a time.all the things that we have added to stage area,they will be commited to repo 
+	under a single commit id and message
+
+How can you use the staging area to make sure you have one commit per logical change?
+	
+	after making a logical change,I will move all of the untracked files to staging area and then commit them.
+	this way only a single logical change with a particular commit message will be commited.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	branches are useful when we want to add a new experimental feature or to delete a existing feature and check if the 
+	code still holds.we can start a new branch and do all of our changes there.when we are done adding/removing something
+	we can check whether the whole is better or not as compared to the one before it.if it's better then we will merge
+	them ,if not then we will checkout to the older branch
+
+How do the diagrams help you visualize the branch structure?
+
+	tree like diagram helps me to easilt visualize how branches work and a when a branch is made.It is also easy
+	to see what features were added in another branch while we were working on some other branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	
+	merging two branches mean adding the code of both branches in a single file and make a new commit. if a code line is
+	added in a single branch then it must be present in the merged commit also.if we delete a line in a branch then
+	in the merged branch it must not be present.we represent it in this way so that nodes of both of the branches are
+	reachable from the new commit.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+	git's automatic merging is great because we don't have to compare two branches and do the changes manually.it saves
+	a lot of time.but whenever conflicts occur then we must go for manual merging as only a developer knows which
+	lines to add and delete for proper functioning.
