@@ -1,0 +1,33 @@
+***How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+	By using diff, we can see that in which line modifications were made,so by only examining these changed lines,we can 		identify the bug.
+
+***How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+	As a programmer,we make changes in the code whenever we open the code.it's always helpful to have previous version 		of code and compare the new code to see how a bug was introduced or to simply compare which approach is better or 		sometimes to simply how something was implemented(if you forget the code ;) )
+
+***What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+    
+
+***Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, 		like Google Docs, treat each file separately?
+	
+	because is made for handling big projects.In programming to do one single task,sometimes we have to make changes in
+	multiple files.so a single logical change may result in changing more than 1 files.
+	whereas in google docs,we work in a single file.
+
+***How can you use the commands git log and git diff to view the history of files?
+
+	git log simply tells me the date,time,commit id and the commit message.this commit message will tell me what changes 	 were introduced in this commit and then by using git diff I can compare this commit with the previous one to see the 	changes that were made.
+
+***How might using version control make you more confident to make changes that could break something?
+
+	I don't have to keep backups of big projects or try to remember what I did in the past or what i have changed.I'll
+	simply make the change and if any bug appears then i'll simply see the difference b/w two commits by 
+	git diff command and then identify the bug.
+
+***Now that you have your workspace set up, what do you want to try using Git for?
+	
+	I want to try git to develop my android apps and also collaborate in blood donation collaborative project that is
+	ongoing in my scholarship
+
